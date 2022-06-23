@@ -13,7 +13,7 @@ function getFactAjax() {
 
         let xhr = new XMLHttpRequest();
 
-        xhr.open('GET', `http://numbersapi.com/${number}`, true);
+        xhr.open('GET', `//numbersapi.com/${number}`, true);
 
         xhr.onload = function () {
             if (this.status == 200) {
@@ -33,7 +33,7 @@ function getFactFetch() {
     let number = numberInput.value;
 
     if (number != '') {
-        fetch(`http://numbersapi.com/${number}`)
+        fetch(`//numbersapi.com/${number}`)
             .then(response => response.text())
             .then(data => {
                 fact.style.display = 'block';
